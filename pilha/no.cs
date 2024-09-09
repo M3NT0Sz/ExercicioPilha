@@ -1,12 +1,24 @@
 // Nó da pilha
-public class No
-{
-    public int valor;
+// public class No
+// {
+//     public int valor;
+//     public No prox;
+
+//     public No(int valor)
+//     {
+//         this.valor = valor;
+//         this.prox = null;
+//     }
+// }
+
+// Nó da pilha Ex5
+public class No{
+    public string letra;
     public No prox;
 
-    public No(int valor)
+    public No(string letra)
     {
-        this.valor = valor;
+        this.letra = letra;
         this.prox = null;
     }
 }
