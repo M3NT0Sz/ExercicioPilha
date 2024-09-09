@@ -81,6 +81,32 @@ public class Pilha
         Console.WriteLine("\nQuantidade de elementos impares na pilha: " + contador);
         return contador;
     }
+    public (Pilha positivos, Pilha negativos) SepararPositivosNegativos()
+    {
+        Pilha positivos = new Pilha();
+        Pilha negativos = new Pilha();
+        No noAtual = this.topo;
+
+        while (noAtual != null)
+        {
+            if (noAtual.valor >= 0)
+            {
+                positivos.push(noAtual.valor);
+            }
+            else
+            {
+                negativos.push(noAtual.valor);
+            }
+            noAtual = noAtual.prox;
+        }
+
+        Console.WriteLine("\nPilha de valores positivos:");
+        positivos.imprimir();
+        Console.WriteLine("\nPilha de valores negativos:");
+        negativos.imprimir();
+
+        return (positivos, negativos);
+    }
 
     public void imprimir()
     {
@@ -92,4 +118,5 @@ public class Pilha
             noAtual = noAtual.prox;
         }
     }
+
 }
