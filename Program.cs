@@ -24,31 +24,33 @@
 // pilha.QuantidadeElementosImpar();
 
 // Ex4
-// Pilha pilha = new Pilha();
-// pilha.push(1);
-// pilha.push(-2);
-// pilha.push(7);
-// pilha.push(-15);
-// pilha.push(51);
-// pilha.push(-23);
+Pilha pilha = new Pilha();
+Pilha pilha2 = new Pilha();
+pilha.push(1);
+pilha.push(-2);
+pilha.push(7);
+pilha.push(-15);
+pilha.push(51);
+pilha.push(-23);
 
-// pilha.imprimir();
+pilha.imprimir();
 // pilha.SepararPositivosNegativos();
+pilha.CopiarPara(pilha2);
 
 // Ex5
-Pilha pilha = new Pilha();
-pilha.push("S");
-pilha.push("U");
-pilha.push("B");
-pilha.push("I");
-pilha.push("N");
-pilha.push("O");
-pilha.push("O");
-pilha.push("N");
-pilha.push("I");
-pilha.push("B");
-pilha.push("U");
-pilha.push("S");
+// Pilha pilha = new Pilha();
+// pilha.push("S");
+// pilha.push("U");
+// pilha.push("B");
+// pilha.push("I");
+// pilha.push("N");
+// pilha.push("O");
+// pilha.push("O");
+// pilha.push("N");
+// pilha.push("I");
+// pilha.push("B");
+// pilha.push("U");
+// pilha.push("S");
 
-pilha.imprimirLetras();
-pilha.palindromo();
+// pilha.imprimirLetras();
+// pilha.palindromo();
