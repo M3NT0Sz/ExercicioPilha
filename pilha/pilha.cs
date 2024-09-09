@@ -180,7 +180,6 @@ public class Pilha
         return noAtual;
     }
 
-
     public void inverter()
     {
         Pilha pilhaAuxiliar = new Pilha();
@@ -191,6 +190,34 @@ public class Pilha
         this.topo = pilhaAuxiliar.topo;
         Console.WriteLine("\nPilha invertida:");
         this.imprimirLetras();
+    }
+
+    public void palindromo()
+    {
+        Pilha pilhaAuxiliar = new Pilha();
+        No noAtual = this.topo;
+
+        while (noAtual != null)
+        {
+            pilhaAuxiliar.push(noAtual.letra);
+            noAtual = noAtual.prox;
+        }
+
+        noAtual = this.topo;
+        No noAuxiliar = pilhaAuxiliar.topo;
+
+        while (noAtual != null)
+        {
+            if (noAtual.letra != noAuxiliar.letra)
+            {
+                Console.WriteLine("\nNão é um palíndromo");
+                return;
+            }
+            noAtual = noAtual.prox;
+            noAuxiliar = noAuxiliar.prox;
+        }
+
+        Console.WriteLine("\nÉ um palíndromo");
     }
 
     public void imprimirLetras()

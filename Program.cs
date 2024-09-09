@@ -37,20 +37,18 @@
 
 // Ex5
 Pilha pilha = new Pilha();
-pilha.push("R");
-pilha.push("A");
-pilha.push("M");
-pilha.push("A");
-pilha.push("R");
-pilha.push("G");
-pilha.push("O");
-pilha.push("R");
-pilha.push("P");
-pilha.push("O");
-pilha.push("M");
-pilha.push("A");
+pilha.push("S");
 pilha.push("U");
-pilha.push("E");
+pilha.push("B");
+pilha.push("I");
+pilha.push("N");
+pilha.push("O");
+pilha.push("O");
+pilha.push("N");
+pilha.push("I");
+pilha.push("B");
+pilha.push("U");
+pilha.push("S");
 
 pilha.imprimirLetras();
-pilha.inverter();
+pilha.palindromo();
