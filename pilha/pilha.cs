@@ -47,16 +47,38 @@ public class Pilha
 
     public int QuantidadeElementos()
     {
+        No noAtual = this.topo;
         int contador = 0;
-        var atual = this.topo;
 
-        while (atual != null)
+        while (noAtual != null)
         {
             contador++;
-            atual = atual.prox;
+            noAtual = noAtual.prox;
         }
 
         Console.WriteLine("\nQuantidade de elementos na pilha: " + contador);
+        return contador;
+    }
+
+    public int QuantidadeElementosImpar()
+    {
+        int contador = 0;
+        No noAtual = this.topo;
+
+        while (noAtual != null)
+        {
+            if (noAtual.valor % 2 != 0)
+            {
+                contador++;
+                noAtual = noAtual.prox;
+            }
+            else
+            {
+                noAtual = noAtual.prox;
+            }
+        }
+
+        Console.WriteLine("\nQuantidade de elementos impares na pilha: " + contador);
         return contador;
     }
 

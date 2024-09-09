@@ -16,6 +16,9 @@ pilha.push(1);
 pilha.push(2);
 pilha.push(3);
 
-pilha.pop();
+// pilha.pop();
 pilha.imprimir();
-pilha.QuantidadeElementos();
+// pilha.QuantidadeElementos();
+
+//Ex3
+pilha.QuantidadeElementosImpar();
